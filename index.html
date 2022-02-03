@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Juego del Ahorcado</h1>
+        <p>Introdusca una letra</p>
+    </header>
+    <br>
+    <div class="box">
+        <input type="text" maxlength="1" id="letra" placeholder="Ejem: a,f,j...etc"> <button class="btn" id="evaluar" >Inicar Juego</button>
+        <p id="muestra"></p>
+    </div>  
+    <br>
+    <div class="box">
+        <label for=" id: muestra">Letras erradas: </label>
+        </p><p id="errados"></p>
+    </div>
+    <br>
+    <center>
+       <div id="img"></div> 
+    </center>
+    
+    <div class="box" id="añadir">
+        <p>Ingrese una palabra en minusculas y sin espacios</p>
+        <input type="text" id="nuevaP" placeholder="Ingrese una nuva palabra " maxlength="8"> <button class="btn" id="btnnuevo">Añadir nueva palabra</button>
+        <p id="verificado"></p>
+    </div>
+    <script src="coding.js"></script>
+    <div id="ganador">
+        <p>Felicitaciones</p>
+        <p>Has ganado!!!</p>
+    </div>
+    <div id="perdiste">
+        <p>Game over</p>
+        <p>Vuelve a intentar</p>
+        <button class="btn" id="evaluar2" onclick="reiniciar()">Juegar de nuevo</button>
+    </div>
+
+</body>
+</html>

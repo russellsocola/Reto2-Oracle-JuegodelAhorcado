@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(173, 218, 173);
+}
+header{
+    width: 100%;
+    overflow: hidden;
+    background: #252932;
+    margin-bottom: 20px;
+    color: honeydew;
+    text-align: center;
+    justify-content: center;
+}   
+#img{
+    height: 212px;
+    width: 202px;
+    background-image: url("./ahorcado.png");
+}
+#ganador{
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: mediumpurple;
+}
+#perdiste{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: mediumpurple;
+}
+.btn{
+    border: 0;
+    color: rgb(71, 157, 21);
+    font-weight: bold;
+    background-color: rgb(18, 85, 185);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.box{
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
