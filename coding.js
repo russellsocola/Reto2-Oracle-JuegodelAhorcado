@@ -1,16 +1,16 @@
 //base de palabras disponibles
 var diccionario = [
-    "alura",
-    "oracle",
-    "latam",
-    "ahorcado",
-    "javascrip",
-    "html",
-    "css",
-    "programacion",
-    "perro",
-    "gato",
-    "loro",
+    "ALURA",
+    "ORACLE",
+    "LATAM",
+    "AHORACADO",
+    "JAVASCRIPT",
+    "HTML",
+    "CSS",
+    "PROGRAMACION",
+    "PERRO",
+    "GATO",
+    "LORO",
 ];
 
 String.prototype.replaceAt=function(index, character) { 
@@ -48,8 +48,8 @@ document.querySelector("#evaluar").addEventListener("click", ()=>
          if(contadorfallos==4){
             document.querySelector("#perdiste").style.display="flex";
          }else {
-             if (palabrasgion.indexOf("_")<0){
-                 document.querySelector("#ganador").style.display="flex";
+             if (palabrasgion.indexOf("_ ")  <0){
+                document.querySelector("#ganador").style.display="flex";
              }
          }
      }
@@ -58,7 +58,7 @@ document.querySelector("#evaluar").addEventListener("click", ()=>
      document.querySelector("#letra").value = "";
      document.querySelector("#letra").focus();
     }else{
-        alert("No ingrese esoacios en blanco");
+        alert("No ingrese espacios en blanco");
     }
 });
 document.querySelector("#btnnuevo").addEventListener("click", ()=>{
@@ -83,3 +83,14 @@ function reiniciar(){
     location.href= location.href;
 
 }
+/*
+function mayusculas(e){
+    key= e.keyCode;
+    tecla = String.fromCharCode(key).toString();
+    letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+    
+    if (letras.indexOf(tecla) == -1){
+        alert("Ingrese solo letras EN MAYUSCULA");
+        return false
+    }
+}*/

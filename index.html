@@ -9,12 +9,12 @@
 </head>
 <body>
     <header>
-        <h1>Juego del Ahorcado</h1>
-        <p>Introdusca una letra</p>
+        <h1>JUEGO DEL AHORCADO</h1>
+        <p>INTRODUSCA UNA LETRA... EN MAYUSCULA.</p>
     </header>
     <br>
     <div class="box">
-        <input type="text" maxlength="1" id="letra" placeholder="Ejem: a,f,j...etc"> <button class="btn" id="evaluar" >Inicar Juego</button>
+        <input type="text" maxlength="1" id="letra" placeholder="Ejem: A, B, C... ETC. " onkeyup="this.value=this.value.toUpperCase();" required> <button class="btn" id="evaluar" >Probar letra</button>
         <p id="muestra"></p>
     </div>  
     <br>
@@ -29,13 +29,14 @@
     
     <div class="box" id="añadir">
         <p>Ingrese una palabra en minusculas y sin espacios</p>
-        <input type="text" id="nuevaP" placeholder="Ingrese una nuva palabra " maxlength="8"> <button class="btn" id="btnnuevo">Añadir nueva palabra</button>
+        <input type="text" id="nuevaP" placeholder="Ingrese una nuva palabra " maxlength="12"  onkeyup="this.value=this.value.toUpperCase();" required> <button class="btn" id="btnnuevo">Añadir nueva palabra</button>
         <p id="verificado"></p>
     </div>
     <script src="coding.js"></script>
     <div id="ganador">
         <p>Felicitaciones</p>
         <p>Has ganado!!!</p>
+        <button class="btn" id="evaluar3" onclick="reiniciar()">Juegar de nuevo</button>
     </div>
     <div id="perdiste">
         <p>Game over</p>
