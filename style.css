@@ -50,7 +50,7 @@ header{
 }
 .btn{
     border: 0;
-    color: rgb(71, 157, 21);
+    color: rgb(15, 19, 13);
     font-weight: bold;
     background-color: rgb(18, 85, 185);
     padding: 10px;
@@ -60,4 +60,15 @@ header{
 .box{
     text-align: center;
     margin: 0 10px 0 10px;
+}
+.footer{
+    height: 20px;
+    width: 100%;
+    background-color: #0b1721;
+}
+.grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: rgb(231, 240, 232);
 }
