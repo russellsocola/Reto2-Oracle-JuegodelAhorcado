@@ -83,6 +83,9 @@ function reiniciar(){
     location.href= location.href;
 
 }
+function pantalladeinicio(){
+    document.querySelector("#pantallade_inicio").style.display="none";
+}
 /*
 function mayusculas(e){
     key= e.keyCode;

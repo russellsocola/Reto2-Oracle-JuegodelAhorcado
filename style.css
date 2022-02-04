@@ -70,5 +70,26 @@ header{
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
-    color: rgb(231, 240, 232);
+    color: rgb(127, 185, 134);
+}
+#pantallade_inicio{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(173, 218, 173);
+}
+h3{
+    color: #0b1721;
+    font-size: 2rem;
+}
+h4{
+    color: #0b1721;
+    font-size: 0.7rem;
 }

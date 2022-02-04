@@ -28,11 +28,17 @@
     </center>
     
     <div class="box" id="añadir">
-        <p>Ingrese una palabra en minusculas y sin espacios</p>
+        <p>Ingrese una palabra en MAYUSCULAS y sin espacios</p>
         <input type="text" id="nuevaP" placeholder="Ingrese una nuva palabra " maxlength="12"  onkeyup="this.value=this.value.toUpperCase();" required> <button class="btn" id="btnnuevo">Añadir nueva palabra</button>
         <p id="verificado"></p>
     </div>
     <script src="coding.js"></script>
+
+    <div id="pantallade_inicio">
+        <h3>Este es el Juego del Ahorcado.</h3>
+        <h4>punse el boton para comenzar</h4>
+        <button class="btn" onclick="pantalladeinicio()" >Iniciar Juego</button>
+    </div>
     <div id="ganador">
         <p>Felicitaciones</p>
         <p>Has ganado!!!</p>
